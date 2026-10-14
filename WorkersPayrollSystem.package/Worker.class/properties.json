@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "WorkersPayrollSystem",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"surname",
+		"experience",
+		"hourlyRate",
+		"minHours"
+	],
+	"name" : "Worker",
+	"type" : "normal"
+}

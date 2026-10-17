@@ -1,0 +1,15 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "WorkersPayrollSystem",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"mStandard",
+		"mNoSubordinates",
+		"mLargeTeam"
+	],
+	"name" : "ManagerTest",
+	"type" : "normal"
+}

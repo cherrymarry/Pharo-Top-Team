@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "",
+	"super" : "Worker",
+	"category" : "WorkersPayrollSystem",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"subordinatesCount"
+	],
+	"name" : "Manager",
+	"type" : "normal"
+}

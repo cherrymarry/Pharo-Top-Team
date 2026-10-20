@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "WorkersPayrollSystem",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"pNormal",
+		"pPenalized",
+		"pExact",
+		"pOvertime",
+		"pZero"
+	],
+	"name" : "ProgrammerTest",
+	"type" : "normal"
+}

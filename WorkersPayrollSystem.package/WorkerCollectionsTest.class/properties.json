@@ -1,0 +1,16 @@
+{
+	"commentStamp" : "",
+	"super" : "TestCase",
+	"category" : "WorkersPayrollSystem",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"workers",
+		"p1",
+		"p2",
+		"m1"
+	],
+	"name" : "WorkerCollectionsTest",
+	"type" : "normal"
+}

@@ -1,0 +1,3 @@
+initialization
+loadCollection
+	^ self allWorkers

@@ -1,1 +1,1 @@
-self packageOrganizer ensurePackage: #WorkersPayrollSystem withTags: #()!
+SystemOrganization addCategory: #WorkersPayrollSystem!

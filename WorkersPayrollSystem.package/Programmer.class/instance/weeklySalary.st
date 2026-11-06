@@ -1,7 +1,5 @@
 accessing
 weeklySalary
-	| baseSalary |
-	baseSalary := actualHours * hourlyRate.
-	^ actualHours < minHours
-		ifTrue: [ baseSalary * 0.75 ]
-		ifFalse: [ baseSalary ]
+	actualHours < CompanyConstants standardMinHours
+		ifTrue: [ ^ actualHours * hourlyRate * CompanyConstants penaltyRate ]
+		ifFalse: [ ^ actualHours * hourlyRate ]

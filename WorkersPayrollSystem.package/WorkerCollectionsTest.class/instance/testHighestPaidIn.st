@@ -1,5 +1,4 @@
 tests
 testHighestPaidIn
-    | topWorker |
-    topWorker := Worker highestPaidIn: workers.
-    self assert: topWorker equals: m1
+	"Перевіряємо, що найоплачуванішим є менеджер m1"
+	self assert: team highestPaid equals: m1

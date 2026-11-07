@@ -1,6 +1,6 @@
 tests
 testSelectPenalizedProgrammers
-    | penalized |
-    penalized := Worker selectPenalizedProgrammersIn: workers.
-    self assert: penalized size equals: 1.
-    self assert: (penalized includes: p2)
+	| penalized |
+	penalized := team selectPenalizedProgrammers.
+	self assert: penalized size equals: 1.
+	self assert: penalized first equals: p2

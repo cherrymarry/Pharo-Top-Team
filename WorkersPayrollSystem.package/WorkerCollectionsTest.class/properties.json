@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"workers",
+		"team",
 		"p1",
 		"p2",
 		"m1"

@@ -1,8 +1,11 @@
 running
 setUp
-    super setUp.
-    p1 := Programmer new surname: 'Гаврилів'; hourlyRate: 100; minHours: 40; actualHours: 40. "4000 $"
-    p2 := Programmer new surname: 'Стейн'; hourlyRate: 100; minHours: 40; actualHours: 30. "2250 $ (зі штрафом)"
-    m1 := Manager new surname: 'Шевченко'; hourlyRate: 200; subordinatesCount: 10. "8800 $"
-
-    workers := OrderedCollection with: p1 with: p2 with: m1.
+	super setUp.
+	team := Team new.
+	p1 := Programmer surname: 'Коваленко' hourlyRate: 300 minHours: 40 actualHours: 45.
+	p2 := Programmer surname: 'Бойко' hourlyRate: 200 minHours: 40 actualHours: 35.
+	m1 := Manager surname: 'Петренко' hourlyRate: 400 minHours: 40 subordinatesCount: 2.
+	
+	team addWorker: p1.
+	team addWorker: p2.
+	team addWorker: m1

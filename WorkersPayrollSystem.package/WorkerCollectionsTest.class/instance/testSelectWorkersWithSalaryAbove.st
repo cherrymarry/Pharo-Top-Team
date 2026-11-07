@@ -1,7 +1,7 @@
 tests
 testSelectWorkersWithSalaryAbove
-    | highEarners |
-    highEarners := Worker selectWorkersWithSalaryAbove: 3000 in: workers.
-    self assert: highEarners size equals: 2.
-    self assert: (highEarners includes: p1).
-    self assert: (highEarners includes: m1)
+	| highEarners |
+	highEarners := team selectWorkersWithSalaryAbove: 12000.
+	self assert: (highEarners includes: p1).
+	self assert: (highEarners includes: m1).
+	self deny: (highEarners includes: p2)

@@ -1,11 +1,9 @@
 tests
 testHighestPaidWithTie
-	| sameSalaryWorkers topWorker p3 |
-	"Створюємо другого програміста з такою ж зарплатою, як у менеджера m1 (8800 $)"
-	p3 := Programmer new surname: 'Коваленко'; hourlyRate: 220; minHours: 40; actualHours: 40.
-	
-	sameSalaryWorkers := OrderedCollection with: p1 with: m1 with: p3.
-	topWorker := Worker highestPaidIn: sameSalaryWorkers.
-	
-	"Перевіряємо, що повернувся один із них та його зарплата дійсно 8800"
-	self assert: topWorker weeklySalary equals: 8800
+	| team2 p3 |
+	team2 := Team new.
+	p3 := Programmer surname: 'Сидоренко' hourlyRate: 300 minHours: 40 actualHours: 45.
+	team2 addWorker: p1.
+	team2 addWorker: p3.
+	"Має повернути першого знайденого"
+	self assert: (team2 highestPaid = p1 or: [ team2 highestPaid = p3 ])

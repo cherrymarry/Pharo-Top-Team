@@ -4,5 +4,5 @@ printCategoryInfo: aClass
 	| categoryWorkers |
 	categoryWorkers := workers select: [ :w | w isKindOf: aClass ].
 	^ String streamContents: [ :stream |
-		stream show: 'Категорія: '; show: aClass name; show: ' ('; show: categoryWorkers size printString; show: ')'; cr.
-		categoryWorkers do: [ :w | stream show: w printString; cr ] ]
+		stream nextPutAll: 'Категорія: '; nextPutAll: aClass name; nextPutAll: ' ('; nextPutAll: categoryWorkers size printString; nextPutAll: ')'; cr.
+		categoryWorkers do: [ :w | stream nextPutAll: w printString; cr ] ]
